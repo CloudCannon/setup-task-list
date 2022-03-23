@@ -40,6 +40,16 @@ test('No collections', async (t) => {
 	t.is(incompleteTasks.length, 1);
 });
 
+test('Invalid config extension', async (t) => {
+	const files = ['index.html', 'cloudcannon.config.georgeplate'];
+	const taskLists = check({}, files);
+
+	t.is(taskLists.length, 1);
+	t.is(taskLists[0].tasks.length, 4);
+	const incompleteTasks = taskLists[0].tasks.filter((task) => !task.completed);
+	t.is(incompleteTasks.length, 2);
+});
+
 test('Collection without config', async (t) => {
 	const files = ['index.html', 'cloudcannon.config.json'];
 	const taskLists = check({

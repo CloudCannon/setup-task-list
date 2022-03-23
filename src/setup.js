@@ -26,6 +26,7 @@ function globalConfigFile(files) {
 			return file;
 		}
 	}
+
 	return null;
 }
 
