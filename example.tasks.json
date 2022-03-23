@@ -1,0 +1,123 @@
+[{
+		"title": "Connecting your site",
+		"subtext": "Follow these steps to experience how CloudCannon helps empower thousands of static site teams to gain full control of their website and content.",
+		"tasks": [{
+				"level": "required",
+				"action": "Sync your files",
+				"completed": true
+			},
+			{
+				"level": "required",
+				"action": "Build your site",
+				"completed": true
+			},
+			{
+				"level": "required",
+				"action": "Define a global configuration file",
+				"completed": true
+			},
+			{
+				"level": "required",
+				"action": "Configure a collection or data for editing",
+				"completed": true
+			}
+		]
+	},
+	{
+		"title": "Polish your editing experience",
+		"subtext": "Follow these steps to get CloudCannon customised for your editors needs",
+		"tasks": [{
+				"level": "required",
+				"action": "Define a collection",
+				"completed": true
+			},
+			{
+				"level": "recommended",
+				"action": "Complete your staff collection",
+				"subtasks": [{
+						"id": "_collection_config",
+						"level": "recommended",
+						"title": "Define configuration",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.name",
+						"level": "recommended",
+						"title": "Add name option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.icon",
+						"level": "recommended",
+						"title": "Add icon option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.documentation",
+						"level": "optional",
+						"title": "Add documentation option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.description",
+						"level": "optional",
+						"title": "Add description option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.subtext_key",
+						"level": "optional",
+						"title": "Add subtext_key option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.image_key",
+						"level": "optional",
+						"title": "Add image_key option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.image_size",
+						"level": "optional",
+						"title": "Add image_size option",
+						"completed": false
+					},
+					{
+						"id": "_collection_config.singular_name",
+						"level": "informational",
+						"title": "Add singular_name option",
+						"completed": false
+					}
+				]
+			},
+			{
+				"id": "_editables.markdown",
+				"level": "recommended",
+				"title": "Customise the editor toolbars",
+				"documentation": {
+					"text": "Defining custom toolbars",
+					"url": "https://cloudcannon.com/documentation/articles/defining-editable-regions-in-your-html/#options"
+				},
+				"subtasks": [{
+						"id": "_editables.content",
+						"level": "recommended",
+						"title": "Customise the editor toolbar for content editing",
+						"completed": false
+					},
+					{
+						"id": "_editables.text",
+						"level": "optional",
+						"title": "Customise the editor toolbar for text editing",
+						"completed": false
+					},
+					{
+						"id": "_editables.block",
+						"level": "optional",
+						"title": "Customise the editor toolbar for block editing",
+						"completed": false
+					}
+				]
+			}
+		]
+	}
+]

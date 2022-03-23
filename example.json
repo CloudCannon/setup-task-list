@@ -1,0 +1,1841 @@
+{
+	"_inputs": {
+		"ferris": {
+			"type": "image",
+			"options": {
+				"uploads_dir": "img/ferris"
+			}
+		},
+		"headshot": {
+			"type": "image",
+			"options": {
+				"uploads_dir": "img/headshot"
+			}
+		},
+		"logo": {
+			"type": "image",
+			"options": {
+				"uploads_dir": "img/member"
+			}
+		}
+	},
+	"collections_config": {
+		"people": {
+			"_enabled_editors": ["data"],
+			"image_key": "headshot",
+			"image_size": "contain"
+		},
+		"members": {
+			"path": "members",
+			"output": true,
+			"auto_discovered": true,
+			"_enabled_editors": ["data"],
+			"image_key": "logo",
+			"image_size": "contain"
+		},
+		"board": {
+			"path": "board",
+			"output": true,
+			"auto_discovered": true
+		},
+		"policies": {
+			"path": "policies",
+			"output": true,
+			"auto_discovered": true
+		},
+		"staff": {
+			"path": "staff",
+			"output": true,
+			"auto_discovered": true
+		},
+		"events": {
+			"path": "events",
+			"output": true,
+			"auto_discovered": true
+		},
+		"news": {
+			"path": "news",
+			"output": true,
+			"auto_discovered": true
+		},
+		"posts": {
+			"path": "posts",
+			"output": true,
+			"auto_discovered": true
+		},
+		"data": {
+			"path": "_data",
+			"output": false,
+			"auto_discovered": false
+		},
+		"pages": {
+			"path": "",
+			"output": true,
+			"filter": "strict",
+			"auto_discovered": true
+		}
+	},
+	"_editables": {
+		"content": {
+			"blockquote": true,
+			"bold": true,
+			"format": "p h1 h2 h3 h4 h5 h6 pre address div",
+			"italic": true,
+			"strike": true,
+			"subscript": true,
+			"superscript": true,
+			"underline": true,
+			"bulletedlist": true,
+			"indent": true,
+			"numberedlist": true,
+			"outdent": true,
+			"code": true,
+			"embed": true,
+			"horizontalrule": true,
+			"image": true,
+			"table": true,
+			"undo": true,
+			"redo": true,
+			"removeformat": true,
+			"copyformatting": true
+		}
+	},
+	"base_url": "",
+	"source": "",
+	"paths": {
+		"static": "",
+		"uploads": "uploads",
+		"data": "_data",
+		"collections": "",
+		"pages": "",
+		"layouts": "_includes"
+	},
+	"generator": {
+		"name": "eleventy",
+		"version": "^0.11.1",
+		"environment": "",
+		"metadata": {
+			"markdown": "markdown-it",
+			"markdown-it": {
+				"html": true
+			}
+		}
+	},
+	"cloudcannon": {
+		"name": "eleventy-plugin-cloudcannon",
+		"version": "1.0.0"
+	},
+	"collections": {
+		"members": [{
+			"tags": ["members"],
+			"name": "1Password",
+			"level": "silver",
+			"logo": "/img/member/1password.png",
+			"url": "/members/1password/",
+			"path": "members/1password.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Activision",
+			"level": "donor",
+			"logo": "/img/member/activision.png",
+			"url": "/members/activision/",
+			"path": "members/activision.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Arm",
+			"level": "silver",
+			"logo": "/img/member/arm.png",
+			"url": "/members/arm/",
+			"path": "members/arm.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Automata",
+			"level": "silver",
+			"logo": "/img/member/automata.png",
+			"url": "/members/automata/",
+			"path": "members/automata.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "AWS",
+			"level": "founding",
+			"logo": "/img/member/aws.png",
+			"url": "/members/aws/",
+			"path": "members/aws.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "CleverCloud",
+			"level": "silver",
+			"logo": "/img/member/clevercloud.png",
+			"url": "/members/clevercloud/",
+			"path": "members/clevercloud.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Dropbox",
+			"level": "silver",
+			"logo": "/img/member/dropbox.png",
+			"url": "/members/dropbox/",
+			"path": "members/dropbox.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Meta",
+			"level": "platinum",
+			"logo": "/img/member/meta.png",
+			"url": "/members/facebook/",
+			"path": "members/facebook.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Ferrous Systems",
+			"level": "silver",
+			"logo": "/img/member/ferroussystems.png",
+			"url": "/members/ferroussystems/",
+			"path": "members/ferroussystems.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "FutureWei",
+			"level": "silver",
+			"logo": "/img/member/futurewei.png",
+			"url": "/members/futurewei/",
+			"path": "members/futurewei.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Google",
+			"level": "founding",
+			"logo": "/img/member/google.png",
+			"url": "/members/google/",
+			"path": "members/google.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Huawei",
+			"level": "founding",
+			"logo": "/img/member/huawei.png",
+			"url": "/members/huawei/",
+			"path": "members/huawei.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "KDAB",
+			"level": "silver",
+			"logo": "/img/member/kdab.png",
+			"url": "/members/kdab/",
+			"path": "members/kdab.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Knoldus",
+			"level": "silver",
+			"logo": "/img/member/knoldus.png",
+			"url": "/members/knoldus/",
+			"path": "members/knoldus.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Microsoft",
+			"level": "founding",
+			"logo": "/img/member/microsoft.png",
+			"url": "/members/microsoft/",
+			"path": "members/microsoft.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Mozilla",
+			"level": "founding",
+			"logo": "/img/member/mozilla.png",
+			"url": "/members/mozilla/",
+			"path": "members/mozilla.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Open Source Security",
+			"level": "silver",
+			"logo": "/img/member/opensourcesecurity.png",
+			"url": "/members/opensourcesecurity/",
+			"path": "members/opensourcesecurity.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Parastate",
+			"level": "silver",
+			"logo": "/img/member/parastate.png",
+			"url": "/members/parastate/",
+			"path": "members/parastate.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Replit",
+			"level": "donor",
+			"logo": "/img/member/replit.png",
+			"url": "/members/replit/",
+			"path": "members/replit.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Sentry",
+			"level": "silver",
+			"logo": "/img/member/sentry.png",
+			"url": "/members/sentry/",
+			"path": "members/sentry.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "simplabs",
+			"level": "silver",
+			"logo": "/img/member/simplabs.png",
+			"url": "/members/simplabs/",
+			"path": "members/simplabs.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Spectral",
+			"level": "silver",
+			"logo": "/img/member/spectral.png",
+			"url": "/members/spectral/",
+			"path": "members/spectral.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Tag 1 Consulting",
+			"level": "silver",
+			"logo": "/img/member/tag1.png",
+			"url": "/members/tag1consulting/",
+			"path": "members/tag1consulting.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Tangram Vision",
+			"level": "silver",
+			"logo": "/img/member/tangramvision.png",
+			"url": "/members/tangramvision/",
+			"path": "members/tangramvision.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Threema",
+			"level": "silver",
+			"logo": "/img/member/threema.png",
+			"url": "/members/threema/",
+			"path": "members/threema.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Toyota Connected",
+			"level": "silver",
+			"logo": "/img/member/toyota.png",
+			"url": "/members/toyota/",
+			"path": "members/toyota.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Tweede golf",
+			"level": "silver",
+			"logo": "/img/member/tweedegolf.png",
+			"url": "/members/tweedegolf/",
+			"path": "members/tweedegolf.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Watchful",
+			"level": "silver",
+			"logo": "/img/member/watchful.png",
+			"url": "/members/watchful/",
+			"path": "members/watchful.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "Wyliodrin",
+			"level": "silver",
+			"logo": "/img/member/wyliodrin.png",
+			"url": "/members/wyliodrin/",
+			"path": "members/wyliodrin.md",
+			"output": true,
+			"collection": "members"
+		}, {
+			"tags": ["members"],
+			"name": "ZAMA",
+			"level": "silver",
+			"logo": "/img/member/zama.png",
+			"url": "/members/zama/",
+			"path": "members/zama.md",
+			"output": true,
+			"collection": "members"
+		}],
+		"board": [{
+			"tags": ["board"],
+			"name": "Bobby Holley",
+			"title": "Member Director, Mozilla",
+			"ferris": "/img/ferris/bobby.png",
+			"headshot": "/img/headshot/bobby.jpg",
+			"path": "board/bobbyholley.md",
+			"url": "/board/bobbyholley/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Jane Lusby",
+			"title": "Project Director, Collaboration",
+			"ferris": "/img/ferris/jane.png",
+			"headshot": "/img/headshot/jane.jpg",
+			"path": "board/janelusby.md",
+			"url": "/board/janelusby/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Josh Stone",
+			"title": "Project Director, Reliability",
+			"ferris": "/img/ferris/josh.png",
+			"headshot": "/img/headshot/josh.jpg",
+			"path": "board/joshstone.md",
+			"url": "/board/joshstone/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Lars Bergstrom",
+			"title": "Member Director, Google",
+			"ferris": "/img/ferris/lars.png",
+			"headshot": "/img/headshot/lars.jpg",
+			"path": "board/larsbergstrom.md",
+			"url": "/board/larsbergstrom/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Mark Rousskov",
+			"title": "Secretary, Project Director, Core",
+			"ferris": "/img/ferris/mark.png",
+			"headshot": "/img/headshot/mark.png",
+			"path": "board/markrousskov.md",
+			"url": "/board/markrousskov/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Nell Shamrell-Harrington",
+			"title": "Member Director, Microsoft",
+			"ferris": "/img/ferris/nell.png",
+			"headshot": "/img/headshot/nell.png",
+			"path": "board/nellshamrell-harrington.md",
+			"url": "/board/nellshamrell-harrington/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Peixin Hou",
+			"title": "Member Director, Huawei",
+			"ferris": "/img/ferris/peixin.png",
+			"headshot": "/img/headshot/peixin.png",
+			"path": "board/peixinhou.md",
+			"url": "/board/peixinhou/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Shane Miller",
+			"title": "Chairwoman, Member Director, AWS",
+			"ferris": "/img/ferris/shane.png",
+			"headshot": "/img/headshot/shane.jpg",
+			"path": "board/shanemiller.md",
+			"url": "/board/shanemiller/",
+			"output": true,
+			"collection": "board"
+		}, {
+			"tags": ["board"],
+			"name": "Tyler Mandry",
+			"title": "Project Director, Quality",
+			"ferris": "/img/ferris/tyler.png",
+			"headshot": "/img/headshot/tyler.jpg",
+			"path": "board/tylermandry.md",
+			"url": "/board/tylermandry/",
+			"output": true,
+			"collection": "board"
+		}],
+		"policies": [{
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Anti-Bribery and Anti-Corruption Policy",
+			"layout": "layouts/policy.njk",
+			"path": "policies/anti-bribery-and-anti-corruption-policy.md",
+			"url": "/policies/anti-bribery-and-anti-corruption-policy/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Anti-Trust Policy",
+			"layout": "layouts/policy.njk",
+			"path": "policies/anti-trust-policy.md",
+			"url": "/policies/anti-trust-policy/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Bylaws",
+			"layout": "layouts/policy.njk",
+			"path": "policies/bylaws.md",
+			"url": "/policies/bylaws/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Code of Conduct",
+			"layout": "layouts/policy.njk",
+			"path": "policies/code-of-conduct.md",
+			"url": "/policies/code-of-conduct/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Logo Policy and Media Guide",
+			"layout": "layouts/policy.njk",
+			"path": "policies/logo-policy-and-media-guide.md",
+			"url": "/policies/logo-policy-and-media-guide/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Privacy Policy",
+			"layout": "layouts/policy.njk",
+			"path": "policies/privacy-policy.md",
+			"url": "/policies/privacy-policy/",
+			"output": true,
+			"collection": "policies"
+		}, {
+			"tags": ["policies"],
+			"templateClass": "tmpl-info",
+			"title": "Statement on Global Regulations",
+			"layout": "layouts/policy.njk",
+			"footnotes": {
+				"refs": {
+					":1": 0,
+					":2": 1,
+					":3": 2,
+					":4": 3
+				},
+				"list": [{
+					"label": "1",
+					"count": 1
+				}, {
+					"label": "2",
+					"count": 1
+				}, {
+					"label": "3",
+					"count": 1
+				}, {
+					"label": "4",
+					"count": 1
+				}]
+			},
+			"references": {
+				"SECURITY POLICY": {
+					"title": "",
+					"href": "https://www.rust-lang.org/policies/security"
+				},
+				"LF-GUIDANCE": {
+					"title": "",
+					"href": "https://www.linuxfoundation.org/tools/understanding-us-export-controls-with-open-source-projects/"
+				}
+			},
+			"path": "policies/statement-on-global-regulations.md",
+			"url": "/policies/statement-on-global-regulations/",
+			"output": true,
+			"collection": "policies"
+		}],
+		"staff": [{
+			"tags": ["staff"],
+			"name": "Abi Broom",
+			"title": "Operations Manager",
+			"layout": "layouts/home.njk",
+			"ferris": "/img/ferris/abi.png",
+			"headshot": "/img/headshot/abi.jpeg",
+			"path": "staff/abibroom.md",
+			"url": "/staff/abibroom/",
+			"output": true,
+			"collection": "staff"
+		}, {
+			"tags": ["staff"],
+			"name": "Joel Marcey",
+			"title": "Director of Operations and Advocacy",
+			"layout": "layouts/home.njk",
+			"ferris": "/img/ferris/joel.png",
+			"headshot": "/img/headshot/joel.jpeg",
+			"path": "staff/joelmarcey.md",
+			"url": "/staff/joelmarcey/",
+			"output": true,
+			"collection": "staff"
+		}, {
+			"tags": ["staff"],
+			"name": "Paul Lenz",
+			"title": "Director of Finance and Funding",
+			"layout": "layouts/home.njk",
+			"ferris": "/img/ferris/paul.png",
+			"headshot": "/img/headshot/paul.jpeg",
+			"path": "staff/paullenz.md",
+			"url": "/staff/paullenz/",
+			"output": true,
+			"collection": "staff"
+		}, {
+			"tags": ["staff"],
+			"name": "Rebecca (Bec) Rumbul",
+			"title": "Executive Director",
+			"layout": "layouts/home.njk",
+			"ferris": "/img/ferris/bec.png",
+			"headshot": "/img/headshot/bec.jpg",
+			"path": "staff/rebeccarumbul.md",
+			"url": "/staff/rebeccarumbul/",
+			"output": true,
+			"collection": "staff"
+		}],
+		"events": [{
+			"tags": ["events", "video", "live", "core team"],
+			"templateClass": "tmpl-event",
+			"title": "Foundation Conversation - Live AMA, pt 1",
+			"description": "Members of the Rust Core team will be discussing the upcoming Rust Foundation and questions we've been fielding from the community during the Foundation Conversation Q&A sessions.",
+			"date": "2020-12-09T00:00:00.000Z",
+			"layout": "layouts/event.njk",
+			"path": "events/2020-12-09-foundation-conversation-pt1.md",
+			"url": "/events/2020-12-09-foundation-conversation-pt1/",
+			"output": true,
+			"collection": "events"
+		}, {
+			"tags": ["events", "video", "live", "core team"],
+			"templateClass": "tmpl-event",
+			"title": "Foundation Conversation - Live AMA, pt 2",
+			"description": "Members of the Rust Core team continue discussing the upcoming Rust Foundation and questions we've been fielding from the community during the Foundation Conversation Q&A sessions.",
+			"date": "2020-12-12T00:00:00.000Z",
+			"layout": "layouts/event.njk",
+			"path": "events/2020-12-12-foundation-conversation-pt2.md",
+			"url": "/events/2020-12-12-foundation-conversation-pt2/",
+			"output": true,
+			"collection": "events"
+		}, {
+			"tags": ["events", "ama", "live", "webinar"],
+			"templateClass": "tmpl-event",
+			"title": "The Rust Foundation Ask Me Anything (AMA) - November 2021",
+			"description": "Rust Foundation Board Members share the latest updates and answer community questions about the Rust Foundation in an interactive webinar.",
+			"date": "2021-11-16T00:00:00.000Z",
+			"layout": "layouts/event.njk",
+			"path": "events/2021-11-16-foundation-ama.md",
+			"url": "/events/2021-11-16-foundation-ama/",
+			"output": true,
+			"collection": "events"
+		}, {
+			"tags": ["events", "ama", "live", "webinar"],
+			"templateClass": "tmpl-event",
+			"title": "The Rust Foundation Ask Me Anything (AMA) - January 2022",
+			"description": "Rust Foundation Executive Director Bec Rumbul is joined by board member Nell Shamrell-Harrington in an Ask-Me-Anything (AMA) interactive webinar to share the latest updates of the Foundation and answer community questions. Moderated by Sage Griffin.",
+			"date": "2022-01-11T00:00:00.000Z",
+			"layout": "layouts/event.njk",
+			"path": "events/2022-01-11-foundation-ama.md",
+			"url": "/events/2022-01-11-foundation-ama/",
+			"output": true,
+			"collection": "events"
+		}],
+		"news": [{
+			"tags": ["news", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "The Rust Programming Language Finds a New Home in a Nonprofit Foundation",
+			"externalurl": "https://techcrunch.com/2021/02/08/the-rust-programming-language-finds-a-new-home-in-a-non-profit-foundation/",
+			"path": "news/2021-02-08-news-rust-new-home-foundation.md",
+			"url": "/news/2021-02-08-news-rust-new-home-foundation/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "The Rust Programming Language Just Took a Huge Step Forwards",
+			"externalurl": "https://www.zdnet.com/article/the-rust-programming-language-just-took-a-huge-step-forwards/",
+			"path": "news/2021-02-08-news-rust-step-forward.md",
+			"url": "/news/2021-02-08-news-rust-step-forward/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "AWS’s Shane Miller to Head the Newly Created Rust Foundation",
+			"externalurl": "https://www.zdnet.com/article/awss-shane-miller-to-head-the-newly-created-rust-foundation/",
+			"path": "news/2021-04-09-news-shane-miller-chair.md",
+			"url": "/news/2021-04-09-news-shane-miller-chair/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Programming Language - We Want to Take it into the Mainstream, Says Facebook",
+			"externalurl": "https://www.zdnet.com/article/rust-programming-language-we-want-to-take-it-into-the-mainstream-says-facebook/",
+			"path": "news/2021-04-29-news-rust-facebook.md",
+			"url": "/news/2021-04-29-news-rust-facebook/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "external blog"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "How Rust developers are making the web safer",
+			"externalurl": "https://github.com/readme/featured/rust-programming",
+			"path": "news/2021-10-14-news-github-readme-project-rust-safer.md",
+			"url": "/news/2021-10-14-news-github-readme-project-rust-safer/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "membership"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation Achieves Significant Milestone with 15th Silver Member Organization",
+			"description": "First year membership growth points to increasing adoption of the Rust programming language and rapidly increasing investments in the Rust Project",
+			"path": "news/2021-11-02-news-fifteenth-silver-member.md",
+			"url": "/news/2021-11-02-news-fifteenth-silver-member/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "programs", "cloud compute"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation Announces Cloud Compute Program",
+			"description": "Infrastructure contributions from AWS, Microsoft Azure, and Google Cloud will give Rust maintainers free access to cloud compute to reduce development time and personal expenses",
+			"footnotes": {
+				"refs": {
+					":1": 0
+				},
+				"list": [{
+					"label": "1",
+					"count": 1
+				}]
+			},
+			"path": "news/2021-11-16-news-announcing-cloud-compute-initiative.md",
+			"url": "/news/2021-11-16-news-announcing-cloud-compute-initiative/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "foundation"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation Taps Rebecca Rumbul as Executive Director & CEO",
+			"description": "Digital democracy advocate to lead non-profit focused on advancing the Rust Project, a significant step forward in its effort to build an organization to support the rapid innovation and adoption of the Rust programming language",
+			"path": "news/2021-11-17-news-announcing-rebecca-rumbul-executive-director-ceo.md",
+			"url": "/news/2021-11-17-news-announcing-rebecca-rumbul-executive-director-ceo/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "press", "Foundation"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation appoints Rebecca Rumbul as executive director",
+			"externalurl": "https://www.zdnet.com/article/rust-foundation-appoints-rebecca-rumbul-as-executive-director/",
+			"path": "news/2021-11-17-news-rust-foundation-appoints-Rebecca-Rumbul-executive-director.md",
+			"url": "/news/2021-11-17-news-rust-foundation-appoints-Rebecca-Rumbul-executive-director/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "press", "Foundation"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "The Rust Foundation gets ready to Rumbul",
+			"externalurl": "https://www.theregister.com/2021/11/19/rust_foundation_ceo/",
+			"path": "news/2021-11-19-news-rust-foundation-gets-ready-to-rumbul.md",
+			"url": "/news/2021-11-19-news-rust-foundation-gets-ready-to-rumbul/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "Rust", "environment", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Can Rust save the planet? Why, and why not",
+			"externalurl": "https://www.theregister.com/2021/11/30/aws_reinvent_rust/",
+			"path": "news/2021-11-30-news-can-rust-save-the-planet.md",
+			"url": "/news/2021-11-30-news-can-rust-save-the-planet/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "foundation", "program", "community grants"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation to Launch Community Grants Program",
+			"description": "Rust developer community expanding rapidly; access to resources from Rust Foundation will drive strategic and purposeful Rust growth and sustainability",
+			"footnotes": {
+				"refs": {
+					":1": 0
+				},
+				"list": [{
+					"label": "1",
+					"count": 1
+				}]
+			},
+			"path": "news/2021-12-09-news-rust-foundation-to-launch-community-grants-program.md",
+			"url": "/news/2021-12-09-news-rust-foundation-to-launch-community-grants-program/",
+			"output": true,
+			"collection": "news"
+		}, {
+			"tags": ["news", "foundation", "press"],
+			"templateClass": "tmpl-news",
+			"layout": "news",
+			"title": "Rust Foundation Attracts Top Talent to Senior Leadership Roles",
+			"description": "Foundation expansion reflects the continued maturation of the Rust programming language and growth of the global Rust community",
+			"path": "news/2022-02-22-news-rust-foundation-attracts-top-talent-to-senior-leadership-roles.md",
+			"url": "/news/2022-02-22-news-rust-foundation-attracts-top-talent-to-senior-leadership-roles/",
+			"output": true,
+			"collection": "news"
+		}],
+		"posts": [{
+			"tags": ["posts", "announcement", "philosophy"],
+			"templateClass": "tmpl-post",
+			"title": "Hello World!",
+			"byline": "Ashley Williams, Interim Executive Director, Core Team Member",
+			"description": "Announcing the Rust Foundation to the World",
+			"date": "2021-02-08T00:00:00.000Z",
+			"index": false,
+			"layout": "layouts/post.njk",
+			"path": "posts/2021-02-08-hello-world.md",
+			"url": "/posts/2021-02-08-hello-world/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Bobby Holley",
+			"byline": "Bobby Holley, Member Director, Mozilla",
+			"description": "Introducing Bobby Holley as the Member Director for Mozilla. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-03-18-introducing-bobby-holley.md",
+			"url": "/posts/2021-03-18-introducing-bobby-holley/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Tyler Mandry",
+			"byline": "Tyler Mandry, Project Director, Quality",
+			"description": "Introducing Tyler Mandry as the Project Director for Quality. Part of the \"Getting to know the board\" series.",
+			"references": {
+				"PERF": {
+					"title": "",
+					"href": "https://internals.rust-lang.org/t/help-needed-corpus-for-measuring-runtime-performance-of-generated-code/6794"
+				},
+				"BLOG": {
+					"title": "",
+					"href": "https://tmandry.gitlab.io/blog/"
+				}
+			},
+			"path": "posts/2021-03-18-introducing-tyler-mandry.md",
+			"url": "/posts/2021-03-18-introducing-tyler-mandry/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Mark Rousskov",
+			"byline": "Mark Rousskov, Project Director, Core",
+			"description": "Introducing Mark Rousskov as a Project Director for Core. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-03-25-introducing-mark-rousskov.md",
+			"url": "/posts/2021-03-25-introducing-mark-rousskov/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Nell Shamrell-Harrington",
+			"byline": "Nell Shamrell-Harrington, Member Director, Microsoft",
+			"description": "Introducing Nell Shamrell-Harrington as the Member Director for Microsoft. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-03-25-introducing-nell-shamrell-harrington.md",
+			"url": "/posts/2021-03-25-introducing-nell-shamrell-harrington/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Florian Gilcher",
+			"byline": "Florian Gilcher, Project Director, Core",
+			"description": "Introducing Florian Gilcher as the Project Director for Core. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-08-introducing-florian-gilcher.md",
+			"url": "/posts/2021-04-08-introducing-florian-gilcher/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Peixin Hou",
+			"byline": "Peixin Hou, Member Director, Huawei",
+			"description": "Introducing Peixin Hou as the Member Director for Huawei. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-08-introducing-peixin-hou.md",
+			"url": "/posts/2021-04-08-introducing-peixin-hou/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Jane Lusby",
+			"byline": "Jane Lusby, Project Director, Collaboration",
+			"description": "Introducing Jane Lusby as the Project Director for Collaboration. Part of the \"Getting to know the board\" series.",
+			"references": {
+				"1": {
+					"title": "",
+					"href": "https://www.youtube.com/watch?v=HI8Gzg11LBo"
+				}
+			},
+			"path": "posts/2021-04-15-introducing-jane-lusby.md",
+			"url": "/posts/2021-04-15-introducing-jane-lusby/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Shane Miller",
+			"byline": "Shane Miller, Member Director, AWS",
+			"description": "Introducing Shane Miller as the Member Director for AWS. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-15-introducing-shane-miller.md",
+			"url": "/posts/2021-04-15-introducing-shane-miller/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Josh Stone",
+			"byline": "Josh Stone, Project Director, Reliability",
+			"description": "Introducing Josh Stone as the Project Director for Reliability. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-22-introducing-josh-stone.md",
+			"url": "/posts/2021-04-22-introducing-josh-stone/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Lars Bergstrom",
+			"byline": "Lars Bergstrom, Member Director, Google",
+			"description": "Introducing Lars Bergstrom as the Member Director for Google. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-22-introducing-lars-bergstrom.md",
+			"url": "/posts/2021-04-22-introducing-lars-bergstrom/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "getting to know the board series"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Getting to know the board",
+			"title": "Introducing Joel Marcey",
+			"byline": "Joel Marcey, Member Director, Facebook",
+			"description": "Introducing Joel Marcey as the Member Director for Facebook. Part of the \"Getting to know the board\" series.",
+			"path": "posts/2021-04-29-introducing-joel-marcey.md",
+			"url": "/posts/2021-04-29-introducing-joel-marcey/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "membership update"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Membership Update",
+			"title": "Q12021 Membership Update",
+			"byline": "Ashley Williams, Interim Executive Director",
+			"description": "Introducing the new members who joined in Q12021.",
+			"path": "posts/2021-04-29-membership-update.md",
+			"url": "/posts/2021-04-29-membership-update/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "announcement", "jobs"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Announcing our Executive Search",
+			"byline": "Rust Foundation Board of Directors",
+			"description": "Announcing the search for our first permanent Executive Director.",
+			"path": "posts/2021-06-25-announcing-executive-search.md",
+			"url": "/posts/2021-06-25-announcing-executive-search/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Open Source Security",
+			"byline": "Joel Marcey, Rust Foundation Member Director, Facebook",
+			"description": "Introducing Open Source Security, Rust Foundation Silver Member.",
+			"path": "posts/2021-09-21-member-spotlight-open-source-security-software.md",
+			"url": "/posts/2021-09-21-member-spotlight-open-source-security-software/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "ParaState",
+			"byline": "Mark Rousskov, Rust Foundation Secretary and Project Director (Core team)",
+			"description": "Introducing ParaState, Rust Foundation Silver Member.",
+			"path": "posts/2021-10-01-member-spotlight-parastate.md",
+			"url": "/posts/2021-10-01-member-spotlight-parastate/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Knoldus",
+			"byline": "Shane Miller, Rust Foundation Chairwoman and Member Director (AWS)",
+			"description": "Introducing Knoldus, Rust Foundation Silver Member.",
+			"path": "posts/2021-10-07-member-spotlight-knoldus.md",
+			"url": "/posts/2021-10-07-member-spotlight-knoldus/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "update", "crates.io"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Adios Pagers: New Developments on Crates.io",
+			"description": "Ferrous Systems takes over crates.io oncall rotation",
+			"path": "posts/2021-10-18-crates-io-oncall-ferrous-systems.md",
+			"url": "/posts/2021-10-18-crates-io-oncall-ferrous-systems/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Tag1",
+			"description": "Introducing Tag1, Rust Foundation Silver Member.",
+			"path": "posts/2021-10-26-member-spotlight-tag1.md",
+			"url": "/posts/2021-10-26-member-spotlight-tag1/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "announcement", "ama"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Launching the Rust Foundation Quarterly AMAs: Join the Conversation",
+			"description": "The first Rust Foundation Ask Me Anything (AMA) program is on 16 November 2021",
+			"path": "posts/2021-11-04-rust-foundation-ama-launch.md",
+			"url": "/posts/2021-11-04-rust-foundation-ama-launch/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "foundation"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Hello Everyone! How Can I Help?",
+			"byline": "Rebecca Rumbul, Executive Director and CEO, Rust Foundation",
+			"description": "Rebecca Rumbul (Just call me ‘Bec’)",
+			"path": "posts/2021-11-17-introducing-rebecca-rumbul.md",
+			"url": "/posts/2021-11-17-introducing-rebecca-rumbul/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "community"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Love for Rust at re:Invent",
+			"byline": "Rebecca Rumbul, Executive Director and CEO, Rust Foundation",
+			"path": "posts/2021-12-06-love-for-rust-at-reinvent.md",
+			"url": "/posts/2021-12-06-love-for-rust-at-reinvent/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Automata",
+			"description": "Introducing Automata, Rust Foundation Silver Member.",
+			"path": "posts/2021-12-13-member-spotlight-automata.md",
+			"url": "/posts/2021-12-13-member-spotlight-automata/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "community", "rust project"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Make Your Voice Heard: Take the State of Rust Survey",
+			"byline": "Mark Rousskov, Rust Foundation Secretary and Project Director (Core team)",
+			"path": "posts/2021-12-15-take-the-state-of-rust-survey.md",
+			"url": "/posts/2021-12-15-take-the-state-of-rust-survey/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Spectral",
+			"description": "Introducing Automata, Rust Foundation Silver Member.",
+			"path": "posts/2021-12-20-member-spotlight-spectral.md",
+			"url": "/posts/2021-12-20-member-spotlight-spectral/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "foundation", "plans"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Happy New Year, Rustaceans",
+			"byline": "Rebecca Rumbul, Executive Director and CEO, Rust Foundation",
+			"path": "posts/2022-01-06-happy-new-year-rustaceans-from-bec.md",
+			"url": "/posts/2022-01-06-happy-new-year-rustaceans-from-bec/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "foundation", "community grants", "program"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Share your views - Rust Foundation Community Grants Program 2022",
+			"byline": "Rebecca Rumbul, Executive Director and CEO, Rust Foundation",
+			"path": "posts/2022-01-31-survey-rust-foundation-community-grants-program.md",
+			"url": "/posts/2022-01-31-survey-rust-foundation-community-grants-program/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "foundation"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"title": "Board Announcement: Farewell and Thanks to Florian",
+			"path": "posts/2022-02-02-farewell-florian.md",
+			"url": "/posts/2022-02-02-farewell-florian/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Member Spotlight: Zama",
+			"description": "Introducing Zama, Rust Foundation Silver Member.",
+			"path": "posts/2022-02-08-member-spotlight-zama.md",
+			"url": "/posts/2022-02-08-member-spotlight-zama/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Member Spotlight: simplabs",
+			"description": "Introducing simplabs, Rust Foundation Silver Member.",
+			"path": "posts/2022-02-16-member-spotlight-simplabs.md",
+			"url": "/posts/2022-02-16-member-spotlight-simplabs/",
+			"output": true,
+			"collection": "posts"
+		}, {
+			"tags": ["posts", "member spotlight"],
+			"templateClass": "tmpl-post",
+			"layout": "post",
+			"series": "Member Spotlight",
+			"title": "Member Spotlight: 1Password",
+			"description": "Introducing 1Password, Rust Foundation Silver Member.",
+			"path": "posts/2022-03-08-member-spotlight-1password.md",
+			"url": "/posts/2022-03-08-member-spotlight-1password/",
+			"output": true,
+			"collection": "posts"
+		}],
+		"pages": [{
+			"layout": "layouts/base.njk",
+			"permalink": "/about/",
+			"eleventyNavigation": {
+				"key": "About",
+				"order": 2
+			},
+			"path": "about.njk",
+			"url": "/about/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"permalink": "/events/",
+			"eleventyNavigation": {
+				"key": "Events",
+				"order": 7
+			},
+			"path": "events.njk",
+			"url": "/events/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyNavigation": {
+				"key": "Home",
+				"order": 1
+			},
+			"path": "index.njk",
+			"url": "/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"title": "Become a Member",
+			"templateClass": "tmpl-info",
+			"path": "info/become-a-member.njk",
+			"url": "/info/become-a-member/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"title": "Contact",
+			"templateClass": "tmpl-info",
+			"eleventyNavigation": {
+				"key": "Contact",
+				"order": 8
+			},
+			"path": "info/contact.njk",
+			"url": "/info/contact/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"permalink": "/members/",
+			"eleventyNavigation": {
+				"key": "Members",
+				"order": 3
+			},
+			"path": "members.njk",
+			"url": "/members/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"permalink": "/news/",
+			"eleventyNavigation": {
+				"key": "News",
+				"order": 4
+			},
+			"path": "news.njk",
+			"url": "/news/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"permalink": "/page-list/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}",
+			"entries": ["[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]", "[FILTERED]"],
+			"path": "page-list.njk",
+			"url": "/page-list/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/base.njk",
+			"permalink": "/posts/",
+			"eleventyNavigation": {
+				"key": "Blog",
+				"order": 5
+			},
+			"path": "posts.njk",
+			"url": "/posts/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"permalink": "/tags/",
+			"layout": "layouts/home.njk",
+			"path": "tags-list.njk",
+			"url": "/tags/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "board",
+			"title": "Tagged “board”",
+			"path": "tags.njk",
+			"url": "/tags/board/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "members",
+			"title": "Tagged “members”",
+			"path": "tags.njk",
+			"url": "/tags/members/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "staff",
+			"title": "Tagged “staff”",
+			"path": "tags.njk",
+			"url": "/tags/staff/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "ama",
+			"title": "Tagged “ama”",
+			"path": "tags.njk",
+			"url": "/tags/ama/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "live",
+			"title": "Tagged “live”",
+			"path": "tags.njk",
+			"url": "/tags/live/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "webinar",
+			"title": "Tagged “webinar”",
+			"path": "tags.njk",
+			"url": "/tags/webinar/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "video",
+			"title": "Tagged “video”",
+			"path": "tags.njk",
+			"url": "/tags/video/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "core team",
+			"title": "Tagged “core team”",
+			"path": "tags.njk",
+			"url": "/tags/core team/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "press",
+			"title": "Tagged “press”",
+			"path": "tags.njk",
+			"url": "/tags/press/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "membership",
+			"title": "Tagged “membership”",
+			"path": "tags.njk",
+			"url": "/tags/membership/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "foundation",
+			"title": "Tagged “foundation”",
+			"path": "tags.njk",
+			"url": "/tags/foundation/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "program",
+			"title": "Tagged “program”",
+			"path": "tags.njk",
+			"url": "/tags/program/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "community grants",
+			"title": "Tagged “community grants”",
+			"path": "tags.njk",
+			"url": "/tags/community grants/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "Foundation",
+			"title": "Tagged “Foundation”",
+			"path": "tags.njk",
+			"url": "/tags/Foundation/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "programs",
+			"title": "Tagged “programs”",
+			"path": "tags.njk",
+			"url": "/tags/programs/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "cloud compute",
+			"title": "Tagged “cloud compute”",
+			"path": "tags.njk",
+			"url": "/tags/cloud compute/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "external blog",
+			"title": "Tagged “external blog”",
+			"path": "tags.njk",
+			"url": "/tags/external blog/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "Rust",
+			"title": "Tagged “Rust”",
+			"path": "tags.njk",
+			"url": "/tags/Rust/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "environment",
+			"title": "Tagged “environment”",
+			"path": "tags.njk",
+			"url": "/tags/environment/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "getting to know the board series",
+			"title": "Tagged “getting to know the board series”",
+			"path": "tags.njk",
+			"url": "/tags/getting to know the board series/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "announcement",
+			"title": "Tagged “announcement”",
+			"path": "tags.njk",
+			"url": "/tags/announcement/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "philosophy",
+			"title": "Tagged “philosophy”",
+			"path": "tags.njk",
+			"url": "/tags/philosophy/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "membership update",
+			"title": "Tagged “membership update”",
+			"path": "tags.njk",
+			"url": "/tags/membership update/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "update",
+			"title": "Tagged “update”",
+			"path": "tags.njk",
+			"url": "/tags/update/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "crates.io",
+			"title": "Tagged “crates.io”",
+			"path": "tags.njk",
+			"url": "/tags/crates.io/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "community",
+			"title": "Tagged “community”",
+			"path": "tags.njk",
+			"url": "/tags/community/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "member spotlight",
+			"title": "Tagged “member spotlight”",
+			"path": "tags.njk",
+			"url": "/tags/member spotlight/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "jobs",
+			"title": "Tagged “jobs”",
+			"path": "tags.njk",
+			"url": "/tags/jobs/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "plans",
+			"title": "Tagged “plans”",
+			"path": "tags.njk",
+			"url": "/tags/plans/",
+			"output": true,
+			"collection": "pages"
+		}, {
+			"layout": "layouts/home.njk",
+			"eleventyComputed": {
+				"title": "Tagged “{{ tag }}”"
+			},
+			"permalink": "/tags/{{ tag }}/",
+			"tag": "rust project",
+			"title": "Tagged “rust project”",
+			"path": "tags.njk",
+			"url": "/tags/rust project/",
+			"output": true,
+			"collection": "pages"
+		}]
+	},
+	"data": {},
+	"time": "2022-03-21T20:41:15.108Z",
+	"version": "0.0.3",
+	"files": {
+		"/.cloudcannon/routing.json": "f1f0509d598b34fbdeed676c6155b6d2",
+		"/_includes/newslist.njk": "468e06fa01c3a51fc5423bb87f1680f5",
+		"/_includes/metatags.njk": "695b74970f718dda104a16dcbfbb515a",
+		"/_includes/postslist.njk": "574258b11bfb4968b28cf1426717bcec",
+		"/_includes/memberslist-small.njk": "11d999be1a0964e34f595f5a8e35fcf7",
+		"/_includes/nav.njk": "898211abccc4d26fb992d15116f0a0dc",
+		"/_includes/layouts/home.njk": "bed64a9a68bd0522cca477897a8c9474",
+		"/_includes/layouts/event.njk": "3695cf25008ab6f068b976100700c88c",
+		"/_includes/layouts/meeting.njk": "8bebaf093b22072f4a8a9f8479cb8138",
+		"/_includes/layouts/info.njk": "4c47913eed54e2ce194864c44605e488",
+		"/_includes/layouts/news.njk": "9ca6f5cd735f1bc6eea03c575dec4643",
+		"/_includes/layouts/policy.njk": "0e114e702b5126bc6087fa5fb51780ba",
+		"/_includes/layouts/post.njk": "16372095dd93f3f07f5fa72185efd54e",
+		"/_includes/layouts/redirect.njk": "bc693bbded47a52f97e11fa5f1695aed",
+		"/_includes/layouts/base.njk": "282ead2539529aeeca275c16001e2db8",
+		"/_includes/peoplelist.njk": "ad89b38a377fccd6e1f0b1863e63f1e0",
+		"/_includes/eventslist.njk": "5d708ba4e5451658e7f184a637d17322",
+		"/_includes/memberslist.njk": "86ff05eb8ee6096fbc0b7d2b87132756",
+		"/_includes/meetingslist.njk": "6b912f650d038d53a16781d7d4dbc9b8",
+		"/_includes/footer.njk": "f381fecdb2a41ae44b8805538ba301eb",
+		"/members.njk": "238a3671e3708f70515841528ac46270",
+		"/LICENSE-APACHE": "22a53954e4e0ec258dfce4391e905dac",
+		"/posts/2021-04-15-introducing-shane-miller.md": "12eaa8effc701917cd5d56231f6106b6",
+		"/posts/2021-04-08-introducing-florian-gilcher.md": "10f7d66589243baeecd1e6b298ad615f",
+		"/posts/2022-02-16-member-spotlight-simplabs.md": "973ea929bb8d8029312e043e82841940",
+		"/posts/2022-01-31-survey-rust-foundation-community-grants-program.md": "4b216e2996390a59fe27b1ee75cf20bc",
+		"/posts/2021-02-08-hello-world.md": "dc689da8d26bb8d3d27e5d5855ddc784",
+		"/posts/2022-03-08-member-spotlight-1password.md": "f8dfba23a9b8211f570b8a145875801d",
+		"/posts/2021-03-18-introducing-tyler-mandry.md": "0015544d2637599dd27ed9d9742f269e",
+		"/posts/2021-12-15-take-the-state-of-rust-survey.md": "b46a549b730cd7f5783aa53d1820c2e8",
+		"/posts/2021-10-01-member-spotlight-parastate.md": "aaaec4375ff40dd25dd1cad9f3e9f759",
+		"/posts/2021-04-29-introducing-joel-marcey.md": "091f1535213339619cc466344f355805",
+		"/posts/2021-12-06-love-for-rust-at-reinvent.md": "a89b65ea4ba4b3407fce1a0b9afde4fc",
+		"/posts/2022-01-06-happy-new-year-rustaceans-from-bec.md": "73bdb2b7a86031242770140acc8c9c21",
+		"/posts/2021-10-07-member-spotlight-knoldus.md": "7b5afd9dba0ee3feda23fc814b4dfb88",
+		"/posts/2021-11-04-rust-foundation-ama-launch.md": "1465d7071faa9ac9a29bd56e2c522bfc",
+		"/posts/2021-04-22-introducing-josh-stone.md": "655bb39865a1f18f0d6625aef4bc4330",
+		"/posts/2021-03-25-introducing-mark-rousskov.md": "cc7c06a75228acf431b8cd844c5198a6",
+		"/posts/2022-02-08-member-spotlight-zama.md": "5bfd154f7181ad213a2903d6c116d37b",
+		"/posts/2021-03-18-introducing-bobby-holley.md": "9085a4034b6f9e5cf72ce4596fbbf218",
+		"/posts/2021-04-15-introducing-jane-lusby.md": "cf1ed3e3cc1bce3ef061ec479940b7e1",
+		"/posts/2021-09-21-member-spotlight-open-source-security-software.md": "84bb0daca72a3c9b8345a75e852f2c1c",
+		"/posts/2021-10-18-crates-io-oncall-ferrous-systems.md": "c578328263c7d3e8f80faad94dbf29bc",
+		"/posts/2021-11-17-introducing-rebecca-rumbul.md": "0086868b4e0364ca5f66f7a8448b069b",
+		"/posts/2021-04-22-introducing-lars-bergstrom.md": "dbdfc8e55fc124c1a4fb029fda59c1ec",
+		"/posts/2021-06-25-announcing-executive-search.md": "7031c58f6630e6e053958e9358d69023",
+		"/posts/2022-02-02-farewell-florian.md": "98f0712ed27727bb5965ceae6eafa32e",
+		"/posts/2021-10-26-member-spotlight-tag1.md": "07d8e3a2e0ae4017af7f7d53335e6a23",
+		"/posts/posts.json": "e828df880c3d979e6ecd3710990c1d71",
+		"/posts/2021-12-20-member-spotlight-spectral.md": "74b8fc96f9bf1d4b6038319432376e53",
+		"/posts/2021-03-25-introducing-nell-shamrell-harrington.md": "4ba16f4624fcc9e09806408e4dc12636",
+		"/posts/2021-12-13-member-spotlight-automata.md": "b61484bb584fbb5bf05d9e1bf390c40f",
+		"/posts/2021-04-29-membership-update.md": "18f568a58a533b06a372e623e86a0767",
+		"/posts/2021-04-08-introducing-peixin-hou.md": "f7e7d84e305c496aa68517a7131e0714",
+		"/cloudcannon.config.yml": "b6b84c0ad7e752ec1c46bed852725b58",
+		"/netlify.toml": "409b596e87cda0fe4b45de8e2c269b17",
+		"/events.njk": "8268e525d02d56b42ce4c759201ea6f5",
+		"/board/tylermandry.md": "951068c7a455cc2a31068dd123c9e38a",
+		"/board/nellshamrell-harrington.md": "5179d69175c11dcfd43c77eb648b3b2a",
+		"/board/larsbergstrom.md": "708e641d0b445d829f9a0b49aa76e440",
+		"/board/board.json": "1a503dc9728704469b88ae6cf46af54b",
+		"/board/bobbyholley.md": "12c477789c8f2ffa3e1c713edd2a3565",
+		"/board/janelusby.md": "62e047e00ef9a8d3147e0e7879cc43d0",
+		"/board/peixinhou.md": "77d8e901c5f1271d04bd6ade05340bb3",
+		"/board/joshstone.md": "c3a3ba594569dd54c215736fe4e0936f",
+		"/board/shanemiller.md": "bfb2e96de963af4be749d95ce837d720",
+		"/board/markrousskov.md": "d086ed49ce3be44152faa9aa3100175a",
+		"/css/index.css": "89729975c6993e52014f60ef1d03fdfd",
+		"/css/prism-base16-monokai.dark.css": "f25dd8c9739655b7e9665814c107bc63",
+		"/.eleventyignore": "ac036608c5c402f92926505d0f0ab0e4",
+		"/404.njk": "868f5e731d903cfa98da1ba5dd0fa7fe",
+		"/news.njk": "9b19b47d7875d2431434e597bec388fb",
+		"/index.njk": "4403ca8101517e2318aead6bb617e7d8",
+		"/policies/policies.json": "8abd3da166f1dc931424fbaee5d8d5ac",
+		"/policies/privacy-policy.md": "12fddd58ee92e6325916c028a6f6a4ee",
+		"/policies/statement-on-global-regulations.md": "75c201bb1f76ddc3910efe07957541fa",
+		"/policies/code-of-conduct.md": "0e0066cd23f92cbd00026064060b049a",
+		"/policies/anti-bribery-and-anti-corruption-policy.md": "6e7e6e0da471eac4be7ebe8db6afef4e",
+		"/policies/anti-trust-policy.md": "1f088c2effa550dbd5f43df0fdb7697e",
+		"/policies/bylaws.md": "867410d74f561a9e6acc7eeac4ae8325",
+		"/policies/logo-policy-and-media-guide.md": "af325be2c22021eb74176924e9b4dc8f",
+		"/.editorconfig": "95532f742fde8f4b7296a48acdd9cf51",
+		"/README.md": "dd2a8daf1bc0e22a45865e61272e80b0",
+		"/img/rustlogo-white.svg": "b938daaf2b7bcb640b60f1c4efea94be",
+		"/img/rustfoundation-transparent2.svg": "22ee13653808ad16364a97e0289dba48",
+		"/img/four-oh-fourris.png": "407b714eabef24ec1c96b1f42ad264c4",
+		"/img/.gitkeep": "d41d8cd98f00b204e9800998ecf8427e",
+		"/img/favicon/favicon-16x16.png": "a7160459f45aad31b79b7c4704fb062a",
+		"/img/favicon/favicon.ico": "07404e8a8e39fc8c3b19fbafc8d9e2f8",
+		"/img/favicon/android-chrome-192x192.png": "ff6d22111e5cfab4be5b762b91fef496",
+		"/img/favicon/apple-touch-icon.png": "d7736a9353e4765152c60235b706bfcb",
+		"/img/favicon/android-chrome-512x512.png": "4b237a49cb690f3a721def678b6d74ae",
+		"/img/favicon/site.webmanifest": "053100cb84a50d2ae7f5492f7dd7f25e",
+		"/img/favicon/favicon-32x32.png": "1df80ff1a775c245b94f3ca291b3f461",
+		"/img/rust-logo-blk.svg": "b653c6e07999f2b00977c97e126edf79",
+		"/img/social/twitter-blue.png": "7571ea13179d06d922f912f64d14abc6",
+		"/img/social/twitter.png": "1b41a5aecd05df78ba72ba5e9d1a48e8",
+		"/img/social/linkedin.png": "80d6a6fb036c9fb2e0fb66067f9bb912",
+		"/img/social/linkedin-blue.png": "1b18d461ce75c75fdb4d7b6ec08b3e65",
+		"/img/cargo.png": "25f5281a65399014983aa76151276d06",
+		"/img/thumbnail.png": "a218776cfc5b03dc38b9cadb512c4a2a",
+		"/img/rf-logo-transparent.png": "440b7301bbd731817b102fbd82657a46",
+		"/img/rustfoundation-transparent.svg": "7f49dff46f4acf3198039bca1cdfb0b5",
+		"/info/contact.njk": "e5d1f535f71f87376b1473475df5d2a4",
+		"/info/become-a-member.njk": "ea2fc2a1d5df3f3a8d70cb61d0fe583e",
+		"/about.njk": "f4f85508cc936197e251e7e9c81e92ea",
+		"/tags-list.njk": "1562f86c924c1ebc40340d594d4dca55",
+		"/news/2021-11-30-news-can-rust-save-the-planet.md": "9a37a5dd6489069014a82d65b79cf0a1",
+		"/news/2021-12-09-news-rust-foundation-to-launch-community-grants-program.md": "94d6dbbd2a9db9c7079f8e01061247a4",
+		"/news/2021-02-08-news-rust-new-home-foundation.md": "1f41fb9b5add6bf20b714cfbc305fe34",
+		"/news/2021-04-29-news-rust-facebook.md": "bb75686daf38a3b4c8dec4f0fe27983a",
+		"/news/2021-10-14-news-github-readme-project-rust-safer.md": "dcfb5488112592bae59db2ead280fe07",
+		"/news/2021-11-17-news-announcing-rebecca-rumbul-executive-director-ceo.md": "9239fea60f052cf807d2ac786579b696",
+		"/news/2022-02-22-news-rust-foundation-attracts-top-talent-to-senior-leadership-roles.md": "74778f1484750e2332d2a31052dbbde2",
+		"/news/2021-11-02-news-fifteenth-silver-member.md": "ae1970b04b0928e4f9103128bacc825e",
+		"/news/2021-11-19-news-rust-foundation-gets-ready-to-rumbul.md": "e23b40891db506595a5cc874e717104e",
+		"/news/news.json": "62ece6276634686ae6a7196707077a52",
+		"/news/2021-11-17-news-rust-foundation-appoints-Rebecca-Rumbul-executive-director.md": "5ab553d552ccd4a7805017bc516e1aa1",
+		"/news/2021-04-09-news-shane-miller-chair.md": "f446c2a13bf1638a4d6d3f7c2b77ba6f",
+		"/news/2021-02-08-news-rust-step-forward.md": "ea425deaa4bc2c59ff5f9958e334768a",
+		"/news/2021-11-16-news-announcing-cloud-compute-initiative.md": "2c1149b6c662761d41023bebcb66d7d2",
+		"/.gitignore": "348521b116cf5bff20a60db0927bbacd",
+		"/package-lock.json": "99f33ef91eca8dbbe709ca733b22a73c",
+		"/package.json": "9b8fc0366ca091fb6b50d6426cb99931",
+		"/page-list.njk": "40b1b83e4d37c217434cee75526b2f93",
+		"/static/membership-agreement-v1.4.pdf": "e56a7c2e27408b44d879c072aaa2cef6",
+		"/static/minutes/2021-05-11-minutes.pdf": "e5c65e513cd22ac532418331b5bc85a4",
+		"/static/minutes/2021-02-09-minutes.pdf": "ecd695848aedbb4e857e8a4176710657",
+		"/static/minutes/2021-03-09-minutes.pdf": "5b9508e678d334fc6622f08c44541578",
+		"/static/rust-foundation-overview.pdf": "60a3fa31ac8c0cf545eab8aab3afd821",
+		"/feed/htaccess.njk": "070af5f8559a0584ddd07ffb537a04e4",
+		"/feed/feed.njk": "8ec153f45f0b4bf26a37c7601222e678",
+		"/feed/json.njk": "41e9ce2fbff18f5011db8698c815f0d6",
+		"/.nvmrc": "2737b49252e2a4c0fe4c342e92b13285",
+		"/.github/workflows/publish.yml": "4b700546c461756e983e5b4d017eeea7",
+		"/posts.njk": "79a310207e3b39b6901763d0f001b69b",
+		"/members/tweedegolf.md": "0f1d5227a36754f9c87e522f287a3006",
+		"/members/tag1consulting.md": "94a351af0a90aa40b099a39567d28480",
+		"/members/opensourcesecurity.md": "d53c388cc2a2b66077dd6918f7bf6d30",
+		"/members/spectral.md": "75bb5f15e243d57f0891b9c945c5abc9",
+		"/members/activision.md": "08173bbb2179a3d3d9c78f36c162dd13",
+		"/members/threema.md": "08ab5a84462e1ce234a48859bfca87f0",
+		"/members/arm.md": "3eae647ae9d44bc55ac21cdbe7990334",
+		"/members/facebook.md": "896d02717330dfdcd6a07ce24e2ff277",
+		"/members/dropbox.md": "1c92532af7c6188cbbec1e591d751f07",
+		"/members/knoldus.md": "4aa0050f835b06adf0899c0271e283a6",
+		"/members/replit.md": "b7b3bd88915b3823cdfa1d0fa7e73388",
+		"/members/tangramvision.md": "376b907a1669b78fd10ec8e926b82c48",
+		"/members/huawei.md": "ff15b2feb4222e1d70e67f8a342d4e3a",
+		"/members/simplabs.md": "8dc6cbe8efdf44e17c3bb67d810039e0",
+		"/members/sentry.md": "ad6d5499019e8d2ce2b53530f62c229e",
+		"/members/members.json": "68ddd41e678d0acd1d966ae28f2aeeaa",
+		"/members/automata.md": "c64050df62493d5973cd730fa7ea3952",
+		"/members/futurewei.md": "8051284eb00d63123c40d43aebeccc53",
+		"/members/ferroussystems.md": "21694c286b9b8a03d442f3bf7c9ee4c9",
+		"/members/microsoft.md": "dda1b9aa7d370335a00c2064cb43d6e8",
+		"/members/kdab.md": "34f11457b9b2c18f31da3edda1098a54",
+		"/members/toyota.md": "5368f0df7d54fbda64b2a1de647efdcd",
+		"/members/parastate.md": "4a77c4989769fadeacd00ffa95275351",
+		"/members/google.md": "76b845762b509e707d857e6c0abe2bcb",
+		"/members/clevercloud.md": "0b44a54d97b474b691a073af6b806941",
+		"/members/mozilla.md": "854b36fe3661325c2da36044a9759e90",
+		"/members/wyliodrin.md": "5a1a03e329a3229785528a726ce29498",
+		"/members/aws.md": "6d53c6971d70cfb71f730cb27fbeb1c9",
+		"/members/watchful.md": "43bc3d171a1e56732eb970aadc3a9e58",
+		"/members/zama.md": "fc33fa05a8d9fcaeaefac36e2528003d",
+		"/members/1password.md": "9332bc6312e02641e9dd14f7fc358cd9",
+		"/staff/abibroom.md": "30d29c819c0fa70c512b7375bb10bac3",
+		"/staff/staff.json": "df269210c2fc9fc5c271a715293b2564",
+		"/staff/paullenz.md": "89e3961436ab4c66da3a890580ee5065",
+		"/staff/joelmarcey.md": "bfa00f143a645c00a613e9e32716248a",
+		"/staff/rebeccarumbul.md": "eb67a55570e6377bdbe6ed04f4ef9212",
+		"/_data/metadata.json": "4e1b1adaa43c9ab95b4bbeee3eb6aadb",
+		"/.eleventy.js": "570b4a55c47a97557a2898966c907ada",
+		"/events/2020-12-09-foundation-conversation-pt1.md": "cd904e3950a3f810c3b0e416f11f814b",
+		"/events/2022-01-11-foundation-ama.md": "a80613a71a214abc779d13b0f77636be",
+		"/events/events.json": "dc4983afaac0de284bc4cdb5dca368ef",
+		"/events/2020-12-12-foundation-conversation-pt2.md": "6d39888161421fc79c0299540f7ac88e",
+		"/events/2021-11-16-foundation-ama.md": "49d44e7dfefd3f5445b59565bfc2cf31",
+		"/sitemap.xml.njk": "c6ee9657be937b59d7099ddea5c581c7",
+		"/LICENSE-MIT": "b377b220f43d747efdec40d69fcaa69d",
+		"/tags.njk": "1545cc1e8385782717467b9fcd17e538"
+	}
+}
