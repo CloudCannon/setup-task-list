@@ -57,7 +57,7 @@ export default function collectionConfigTasks(config) {
 
 	tasks.push({
 		level: 'required',
-		action: 'Define a collection',
+		title: 'Define a collection',
 		completed: collectionKeys.length > 0
 	});
 
@@ -66,7 +66,7 @@ export default function collectionConfigTasks(config) {
 			const collectionConfig = config.collections_config[collectionKey];
 			tasks.push({
 				level: 'recommended',
-				action: `Complete your ${collectionConfig?.name ?? collectionKey} collection`,
+				title: `Complete your ${collectionConfig?.name ?? collectionKey} collection`,
 				subtasks: collectionConfigSubtasks(collectionConfig)
 			});
 		});

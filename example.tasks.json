@@ -3,22 +3,22 @@
 		"subtext": "Follow these steps to experience how CloudCannon helps empower thousands of static site teams to gain full control of their website and content.",
 		"tasks": [{
 				"level": "required",
-				"action": "Sync your files",
+				"title": "Sync your files",
 				"completed": true
 			},
 			{
 				"level": "required",
-				"action": "Build your site",
+				"title": "Build your site",
 				"completed": true
 			},
 			{
 				"level": "required",
-				"action": "Define a global configuration file",
+				"title": "Define a global configuration file",
 				"completed": true
 			},
 			{
 				"level": "required",
-				"action": "Configure a collection or data for editing",
+				"title": "Configure a collection or data for editing",
 				"completed": true
 			}
 		]
@@ -28,12 +28,12 @@
 		"subtext": "Follow these steps to get CloudCannon customised for your editors needs",
 		"tasks": [{
 				"level": "required",
-				"action": "Define a collection",
+				"title": "Define a collection",
 				"completed": true
 			},
 			{
 				"level": "recommended",
-				"action": "Complete your staff collection",
+				"title": "Complete your staff collection",
 				"subtasks": [{
 						"id": "_collection_config",
 						"level": "recommended",

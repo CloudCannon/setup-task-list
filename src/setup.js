@@ -34,20 +34,20 @@ export default function checkBasicTasks(config, files) {
 	const tasks = [];
 	tasks.push({
 		level: 'required',
-		action: 'Sync your files',
+		title: 'Sync your files',
 		completed: !emptyFilesCheck(files)
 	});
 
 	tasks.push({
 		level: 'required',
-		action: 'Build your site',
-		completed: !!config
+		title: 'Build your site',
+		completed: !!config?.cloudcannon?.version
 	});
 
 	const configFile = globalConfigFile(files);
 	tasks.push({
 		level: 'required',
-		action: 'Define a global configuration file',
+		title: 'Define a global configuration file',
 		completed: !!configFile
 	});
 
@@ -58,7 +58,7 @@ export default function checkBasicTasks(config, files) {
 
 	tasks.push({
 		level: 'required',
-		action: 'Configure a collection or data for editing',
+		title: 'Configure a collection or data for editing',
 		completed: collectionKeys.length > 0
 	});
 
