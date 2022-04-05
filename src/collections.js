@@ -1,47 +1,44 @@
-const expectedKeys = {
-	name: {
-		level: 'recommended'
+const taskGroups = [
+	{
+		id: 'icon',
+		title: 'Add an icon',
+		subtext: 'Make your collection stand out in the site navigation menu',
+		level: 'recommended',
+		expectedKeys: ['icon']
 	},
-	icon: {
-		level: 'recommended'
+	{
+		id: 'documentation',
+		title: 'Add inline documentation',
+		subtext: 'Inform your editors with custom documentation links or an inline description',
+		level: 'recommended',
+		expectedKeys: ['documentation', 'description']
 	},
-	documentation: {
-		level: 'optional'
+	{
+		id: 'previews',
+		title: 'Customize how items look',
+		subtext: 'Update how each collection item is presented with text_key, subtext_key, image_key or image_size.',
+		level: 'recommended',
+		expectedKeys: ['text_key', 'subtext_key', 'image_key', 'image_size']
 	},
-	description: {
-		level: 'optional'
-	},
-	subtext_key: {
-		level: 'optional'
-	},
-	image_key: {
-		level: 'optional'
-	},
-	image_size: {
-		level: 'optional'
-	},
-	singular_name: {
-		level: 'informational'
-	},
-};
+	{
+		id: 'adding',
+		title: 'Define how new items are created',
+		subtext: 'By default CloudCannon clones an existing item. You can add multple add options or disable add completely.',
+		level: 'recommended',
+		expectedKeys: ['add_options', 'disable_add', 'schemas']
+	}
+];
 
-function collectionConfigSubtasks(collectionConfig) {
+function collectionConfigSubtasks(collectionKey, collectionConfig) {
 	const tasks = [];
 
-	tasks.push({
-		id: '_collection_config',
-		level: 'recommended',
-		title: 'Define configuration',
-		completed: !!collectionConfig
-	});
-
-	Object.keys(expectedKeys).forEach((key) => {
-		const settings = expectedKeys[key];
+	taskGroups.forEach((task) => {
+		const complete = task.expectedKeys.reduce((memo, key) => memo || collectionConfig[key], false);
 		tasks.push({
-			id: `_collection_config.${key}`,
-			level: settings.level,
-			title: `Add ${key} option`,
-			completed: !!collectionConfig?.[key]
+			id: `_collection_config.${collectionKey}.${task.id}`,
+			level: task.level,
+			title: task.title,
+			completed: complete
 		});
 	});
 
@@ -67,7 +64,7 @@ export default function collectionConfigTasks(config) {
 			tasks.push({
 				level: 'recommended',
 				title: `Complete your ${collectionConfig?.name ?? collectionKey} collection`,
-				subtasks: collectionConfigSubtasks(collectionConfig)
+				subtasks: collectionConfigSubtasks(collectionKey, collectionConfig)
 			});
 		});
 	}
