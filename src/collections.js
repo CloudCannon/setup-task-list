@@ -35,9 +35,8 @@ function collectionConfigSubtasks(collectionKey, collectionConfig) {
 	taskGroups.forEach((task) => {
 		const complete = task.expectedKeys.reduce((memo, key) => memo || collectionConfig?.[key], false);
 		tasks.push({
+			...task,
 			id: `_collection_config.${collectionKey}.${task.id}`,
-			level: task.level,
-			title: task.title,
 			completed: complete
 		});
 	});

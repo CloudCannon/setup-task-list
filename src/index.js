@@ -20,8 +20,8 @@ export default function check(config, files) {
 			title: 'Polish your editing experience',
 			subtext: 'Follow these steps to get CloudCannon customised for your editors needs',
 			tasks: [
-				...collectionConfigTasks(config),
-				...editablesConfigTasks(config)
+				...collectionConfigTasks(config, files),
+				...editablesConfigTasks(config, files)
 			]
 		}
 	];
