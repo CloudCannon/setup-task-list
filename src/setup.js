@@ -22,7 +22,7 @@ export default function checkBasicTasks(config, files) {
 	tasks.push({
 		level: 'required',
 		title: 'Define a global configuration file',
-		subtext: 'Configuring editing starts with the global configuration file',
+		subtext: 'Configuring editing starts with the global configuration file.',
 		documentation: {
 			url: 'https://cloudcannon.com/documentation/articles/setting-global-configuration/',
 			text: 'Setting global configuration'

@@ -21,7 +21,7 @@ export default function check(config, files) {
 		basicTaskList,
 		{
 			title: 'Polish your editing experience',
-			subtext: 'Follow these steps to get CloudCannon customised for your editors needs',
+			subtext: 'Follow these steps to get CloudCannon customised for your editors needs.',
 			tasks: [
 				...collectionConfigTasks(config, configFile),
 				...editablesConfigTasks(config, configFile)
