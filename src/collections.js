@@ -68,7 +68,7 @@ export default function collectionConfigTasks(config, configFile) {
 			tasks.push({
 				level: 'recommended',
 				title: `Complete your ${collectionConfig?.name ?? collectionKey} collection`,
-				subtext: 'Reduce or increase the number of options for your editors. As a minimum it is recommended that you look at the heading levels available.',
+				subtext: 'Tell CloudCannon more about your collection like how to display it or how it should be edited.',
 				documentation: docsLink,
 				actions: [{
 					href: `cloudcannon:edit?editor=source&path=/${configFile}`,
