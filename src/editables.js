@@ -1,5 +1,3 @@
-import globalConfigFile from './helpers/config-file.js';
-
 const docsLink = {
 	text: 'Defining custom toolbars',
 	url: 'https://cloudcannon.com/documentation/articles/defining-editable-regions-in-your-html/#options',
@@ -29,9 +27,7 @@ function editablesConfigSubtask(config, key) {
 	};
 }
 
-export default function editablesConfigTasks(config, files) {
-	const configFile = globalConfigFile(files);
-
+export default function editablesConfigTasks(config, configFile) {
 	return [{
 		id: '_editables.markdown',
 		level: 'recommended',
@@ -41,7 +37,7 @@ export default function editablesConfigTasks(config, files) {
 		actions: [{
 			href: `cloudcannon:edit?editor=source&path=/${configFile}`,
 			text: 'Edit global config',
-			icon: 'add'
+			icon: 'edit'
 		}],
 		subtasks: Object.keys(editableKeys)
 			.map((key) => editablesConfigSubtask(config, key))

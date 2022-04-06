@@ -1,6 +1,7 @@
 import checkBasicTasks from './setup.js';
 import editablesConfigTasks from './editables.js';
 import collectionConfigTasks from './collections.js';
+import globalConfigFile from './helpers/config-file.js';
 
 export default function check(config, files) {
 	const basicTasks = checkBasicTasks(config, files);
@@ -14,14 +15,16 @@ export default function check(config, files) {
 		return [basicTaskList];
 	}
 
+	const configFile = globalConfigFile(files);
+
 	const taskLists = [
 		basicTaskList,
 		{
 			title: 'Polish your editing experience',
 			subtext: 'Follow these steps to get CloudCannon customised for your editors needs',
 			tasks: [
-				...collectionConfigTasks(config, files),
-				...editablesConfigTasks(config, files)
+				...collectionConfigTasks(config, configFile),
+				...editablesConfigTasks(config, configFile)
 			]
 		}
 	];
