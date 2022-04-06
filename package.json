@@ -1,7 +1,7 @@
 {
   "name": "@cloudcannon/setup-task-list",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Parses config, files and folder structures to create a JSON task list file for setting up a site.",
   "keywords": [
     "static site generator",
