@@ -43,6 +43,16 @@ test('No build (alternate)', async (t) => {
 	t.is(incompleteTasks.length, 3);
 });
 
+test('Has build (alternate)', async (t) => {
+	const files = ['index.html'];
+	const taskLists = check({ error: 'NOFILEFOUND' }, files);
+
+	t.is(taskLists.length, 1);
+	t.is(taskLists[0].tasks.length, 4);
+	const incompleteTasks = taskLists[0].tasks.filter((task) => !task.completed);
+	t.is(incompleteTasks.length, 2);
+});
+
 test('No config file', async (t) => {
 	const files = ['index.html'];
 	const taskLists = check(validConfig, files);

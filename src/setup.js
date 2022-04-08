@@ -15,7 +15,7 @@ export default function checkBasicTasks(config, files) {
 	tasks.push({
 		level: 'required',
 		title: 'Build your site',
-		completed: !!config?.cloudcannon?.version
+		completed: !!(config?.cloudcannon?.version || config?.error)
 	});
 
 	const configFile = globalConfigFile(files);
