@@ -4,8 +4,7 @@
   "version": "0.0.11",
   "description": "Parses config, files and folder structures to create a JSON task list file for setting up a site.",
   "keywords": [
-    "static site generator",
-    "cloudcannon"
+    "CloudCannon"
   ],
   "homepage": "https://github.com/CloudCannon/setup-task-list#readme",
   "repository": {
