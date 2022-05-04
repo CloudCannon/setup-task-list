@@ -36,7 +36,7 @@
     "mockdate": "^3.0.5"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {}
 }
