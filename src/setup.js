@@ -28,7 +28,7 @@ export default function checkBasicTasks(config, files) {
 			text: 'Setting global configuration'
 		},
 		actions: [{
-			href: 'cloudcannon:create?editor=source',
+			href: 'cloudcannon:create?path=%2Fcloudcannon.config.yml&cc_schema=cloudcannon-config-yaml&editor=source',
 			text: 'Add new file',
 			icon: 'add'
 		}],
